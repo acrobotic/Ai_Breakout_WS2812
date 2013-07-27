@@ -1,8 +1,22 @@
 #include "Ai_WS2811.h"
-void Ai_WS2811::init() {
-  LED_PORT &= ~LED_BIT;
-  LED_DDR |= LED_BIT;
+
+void Ai_WS2811::init(uint8_t pin) {
+  pinMode(pin, OUTPUT);
+  digitalWrite(pin, LOW);
 }
+
+void Ai_WS2811::send() {
+  sendByte(_r);
+  sendByte(_g);
+  sendByte(_b);
+}  
+
+
+void Ai_WS2811::setColor(byte r, byte g, byte b) {
+  _r = r;
+  _g = g;
+  _b = b;
+} 
 
 void Ai_WS2811::sendByte(byte b) {
   byte i=8;
