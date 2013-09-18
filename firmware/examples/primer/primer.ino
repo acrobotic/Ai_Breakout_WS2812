@@ -27,6 +27,7 @@ byte b = 0xff;
 
 void loop()
 {
+  // Toggles LED between Blue, Green, Read
   ws2811.setColor(a,a,b);
   sendLEDs();
   _delay_ms(1000);
