@@ -27,8 +27,16 @@ byte b = 0xff;
 
 void loop()
 {
-  sendLEDs();
   ws2811.setColor(a,a,b);
+  sendLEDs();
+  _delay_ms(1000);
+  
+  ws2811.setColor(a,b,a);
+  sendLEDs();
+  _delay_ms(1000);
+  
+  ws2811.setColor(b,a,a);
+  sendLEDs();
   _delay_ms(1000);
 }
 
