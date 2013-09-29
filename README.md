@@ -7,3 +7,5 @@ License Information
 -------------------
 
 All contents of this repository are released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
+
+![alt Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
