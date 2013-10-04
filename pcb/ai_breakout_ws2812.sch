@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -7541,7 +7541,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 </library>
 <library name="Ai_Passives">
 <packages>
-<package name="0603-CAP">
+<package name="CAP-0603">
 <wire x1="-1.524" y1="0.635" x2="1.524" y2="0.635" width="0.0508" layer="39"/>
 <wire x1="1.524" y1="0.635" x2="1.524" y2="-0.635" width="0.0508" layer="39"/>
 <wire x1="1.524" y1="-0.635" x2="-1.524" y2="-0.635" width="0.0508" layer="39"/>
@@ -7551,21 +7551,61 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-1.905" y="0.635" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.905" y="0.635" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+</package>
+<package name="CAP-055X070">
+<wire x1="-0.635" y1="1.27" x2="-0.635" y2="0" width="0.3048" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.3048" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="0" width="0.3048" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.3048" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.683" y1="2.54" x2="-3.683" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-2.794" x2="3.429" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="3.683" y1="-2.54" x2="3.683" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="2.794" x2="-3.429" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="2.794" x2="3.683" y2="2.54" width="0.1524" layer="21" curve="-90"/>
+<wire x1="3.429" y1="-2.794" x2="3.683" y2="-2.54" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.683" y1="-2.54" x2="-3.429" y2="-2.794" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.683" y1="2.54" x2="-3.429" y2="2.794" width="0.1524" layer="21" curve="-90"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128"/>
+<pad name="2" x="2.54" y="0" drill="0.8128"/>
+<text x="-3.81" y="3.175" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="CAP-025X050">
+<wire x1="-2.159" y1="1.27" x2="2.159" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="-1.27" x2="-2.159" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.413" y1="1.016" x2="2.413" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-2.413" y1="1.016" x2="-2.413" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="1.27" x2="2.413" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="1.016" x2="-2.159" y2="1.27" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.159" y1="-1.27" x2="2.413" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="-2.413" y1="-1.016" x2="-2.159" y2="-1.27" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.2032" layer="51"/>
+<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
+<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.2032" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.6764"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
 <symbol name="CAP">
-<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="-1.27" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
-<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.397" width="0.1524" layer="94"/>
+<text x="1.905" y="1.651" size="1.524" layer="96" ratio="15" rot="R90">&gt;VALUE</text>
+<text x="-0.381" y="-4.826" size="1.524" layer="95" ratio="15" rot="R90">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.397" x2="2.032" y2="-0.889" layer="94"/>
+<rectangle x1="-2.032" y1="0.889" x2="2.032" y2="1.397" layer="94"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7574,7 +7614,25 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603-CAP">
+<device name="0603" package="CAP-0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="055X070" package="CAP-055X070">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="025X050" package="CAP-025X050">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7594,7 +7652,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <symbol name="VCC">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="96">VCC</text>
+<text x="-1.905" y="2.54" size="1.524" layer="96" ratio="15">VCC</text>
 <pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="GND">
@@ -7602,7 +7660,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="-2.032" y1="0" x2="2.032" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-0.762" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="-1.524" x2="0.508" y2="-1.524" width="0.254" layer="94"/>
-<text x="-2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="0" size="1.524" layer="96" ratio="15">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7668,7 +7726,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
-<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="5.715" size="1.524" layer="95" ratio="15">&gt;NAME</text>
 <pin name="1" x="5.08" y="-2.54" length="short" rot="R180"/>
 <pin name="2" x="5.08" y="0" length="short" rot="R180"/>
 <pin name="3" x="5.08" y="2.54" length="short" rot="R180"/>
@@ -7706,10 +7764,10 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <parts>
 <part name="FRAME1" library="Ai_Miscellany" deviceset="FRAME-LETTER" device="">
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
-<attribute name="REV" value="1.0"/>
+<attribute name="REV" value="1.1"/>
 </part>
 <part name="RGB" library="Ai_LED" deviceset="LED-WS2812" device=""/>
-<part name="C1" library="Ai_Passives" deviceset="CAP" device="" value="0.1uF"/>
+<part name="C1" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="U$1" library="Ai_Power" deviceset="VCC" device=""/>
 <part name="GND1" library="Ai_Power" deviceset="GND" device=""/>
 <part name="GND2" library="Ai_Power" deviceset="GND" device=""/>
@@ -7774,7 +7832,6 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="100.33" y1="102.87" x2="100.33" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -7800,24 +7857,24 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <segment>
 <pinref part="RGB" gate="U1" pin="DI"/>
 <wire x1="156.21" y1="110.49" x2="158.75" y2="110.49" width="0.1524" layer="91"/>
-<label x="156.21" y="110.49" size="1.778" layer="95"/>
+<label x="158.75" y="110.49" size="1.27" layer="95" ratio="15" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IN" gate="G$1" pin="2"/>
 <wire x1="113.03" y1="80.01" x2="110.49" y2="80.01" width="0.1524" layer="91"/>
-<label x="110.49" y="80.01" size="1.778" layer="95"/>
+<label x="110.49" y="80.01" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DO" class="0">
 <segment>
 <pinref part="RGB" gate="U1" pin="DO"/>
 <wire x1="156.21" y1="102.87" x2="158.75" y2="102.87" width="0.1524" layer="91"/>
-<label x="156.21" y="102.87" size="1.778" layer="95"/>
+<label x="158.75" y="102.87" size="1.27" layer="95" ratio="15" xref="yes"/>
 </segment>
 <segment>
 <pinref part="OUT" gate="G$1" pin="2"/>
 <wire x1="140.97" y1="80.01" x2="143.51" y2="80.01" width="0.1524" layer="91"/>
-<label x="140.97" y="80.01" size="1.778" layer="95"/>
+<label x="143.51" y="80.01" size="1.27" layer="95" ratio="15" xref="yes"/>
 </segment>
 </net>
 </nets>

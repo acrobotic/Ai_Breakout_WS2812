@@ -1,9 +1,9 @@
 ---
 layout: page
-title: WS2812 RGB LED Breakout Board
-tagline: WS2812 breakout board design files and example firmware.
+title: Ai Breakout WS2812
+tagline: Board design files and example firmware for a WS2812 breakout board.
 github_project: Ai_Breakout_WS2812
-full_url: https://github.com/acrobotic/Ai_Breakout_WS2812
+github_user_url: https://github.com/acrobotic
 ---
 {% include JB/setup %}
-{% include PROJECT.md %}
+{% include INCLUDE.md %}
