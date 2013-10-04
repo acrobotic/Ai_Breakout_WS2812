@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -7502,12 +7502,12 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="0.762" y1="3.048" x2="0.762" y2="1.778" width="0.254" layer="94"/>
 <wire x1="0.762" y1="3.048" x2="2.032" y2="3.048" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="3.048" x2="-1.778" y2="3.048" width="0.254" layer="94"/>
-<pin name="VDD" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="VSS" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="DI" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="DO" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
-<text x="-12.7" y="-7.112" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="7.874" size="1.778" layer="95">WS2812</text>
+<pin name="VDD" x="-15.24" y="5.08" length="short"/>
+<pin name="VSS" x="-15.24" y="-2.54" length="short"/>
+<pin name="DI" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="DO" x="12.7" y="-2.54" length="short" rot="R180"/>
+<text x="-12.7" y="-7.112" size="1.524" layer="95" ratio="15">&gt;NAME</text>
+<text x="-12.7" y="7.874" size="1.524" layer="96" ratio="15">WS2812</text>
 <wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
 <wire x1="2.54" y1="7.62" x2="2.54" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
 <text x="-1.524" y="5.5118" size="1.27" layer="94">RGB</text>
@@ -7727,9 +7727,9 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
 <text x="-2.54" y="5.715" size="1.524" layer="95" ratio="15">&gt;NAME</text>
-<pin name="1" x="5.08" y="-2.54" length="short" rot="R180"/>
-<pin name="2" x="5.08" y="0" length="short" rot="R180"/>
-<pin name="3" x="5.08" y="2.54" length="short" rot="R180"/>
+<pin name="1" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="3" x="5.08" y="2.54" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
