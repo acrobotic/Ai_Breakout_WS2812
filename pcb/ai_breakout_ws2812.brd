@@ -129,14 +129,14 @@
 <wire x1="0" y1="9.525" x2="0" y2="0" width="0.127" layer="20"/>
 <text x="9.906" y="0.254" size="0.889" layer="22" font="vector" ratio="15" rot="SMR0"> WS2812 
 Breakout</text>
-<text x="2.667" y="0.254" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">v1.1</text>
-<text x="3.937" y="5.715" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">DI</text>
-<text x="3.937" y="8.89" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">VCC</text>
-<text x="3.937" y="3.683" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">GND</text>
-<text x="10.922" y="3.683" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">GND</text>
-<text x="10.922" y="5.969" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">DO</text>
-<text x="10.922" y="8.89" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">VCC</text>
-<text x="10.922" y="8.89" size="0.508" layer="22" font="vector" ratio="15" rot="MR0">http://acrobotic.com</text>
+<text x="2.159" y="0.127" size="0.635" layer="22" font="vector" ratio="15" rot="MR0">v1.1</text>
+<text x="3.937" y="5.461" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">DI</text>
+<text x="3.937" y="8.636" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">VCC</text>
+<text x="3.937" y="3.429" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">GND</text>
+<text x="10.922" y="3.429" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">GND</text>
+<text x="10.922" y="5.715" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">DO</text>
+<text x="10.922" y="8.636" size="0.889" layer="22" font="vector" ratio="15" rot="MR270">VCC</text>
+<text x="10.922" y="8.636" size="0.508" layer="22" font="vector" ratio="15" rot="MR0">http://acrobotic.com</text>
 </plain>
 <libraries>
 <library name="Ai_LED">
@@ -4030,11 +4030,11 @@ design rules under a new name.</description>
 <element name="C1" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="4.064" y="4.826" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.572" y="6.604" size="0.889" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="IN" library="Ai_Connectors" package="1X03" value="1X03" x="1.905" y="5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.572" y="1.016" size="0.889" layer="25" font="vector" ratio="15" rot="R180"/>
+<element name="IN" library="Ai_Connectors" package="1X03" value="1X03" x="1.905" y="4.7625" smashed="yes" rot="R90">
+<attribute name="NAME" x="4.572" y="1.0795" size="0.889" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="OUT" library="Ai_Connectors" package="1X03" value="1X03" x="12.065" y="5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.922" y="1.016" size="0.889" layer="25" font="vector" ratio="15" rot="R180"/>
+<element name="OUT" library="Ai_Connectors" package="1X03" value="1X03" x="12.065" y="4.7625" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.049" y="1.0795" size="0.889" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="U$5" library="Ai_Miscellany" package="AI-LOGO-L" value="AI-LOGOL" x="6.985" y="5.08" rot="MR0"/>
 </elements>
@@ -4045,14 +4045,14 @@ design rules under a new name.</description>
 <contactref element="RGB" pad="5"/>
 <contactref element="OUT" pad="3"/>
 <contactref element="IN" pad="3"/>
-<wire x1="1.905" y1="7.62" x2="4.064" y2="7.62" width="0.8128" layer="1"/>
-<wire x1="4.064" y1="7.62" x2="5.399" y2="7.62" width="0.8128" layer="1"/>
-<wire x1="5.399" y1="7.62" x2="5.666" y2="7.607" width="0.8128" layer="1"/>
+<wire x1="1.905" y1="7.3025" x2="4.064" y2="7.3025" width="0.8128" layer="1"/>
+<wire x1="4.064" y1="7.3025" x2="5.399" y2="7.3025" width="0.8128" layer="1"/>
+<wire x1="5.399" y1="7.3025" x2="5.666" y2="7.607" width="0.8128" layer="1"/>
 <wire x1="5.666" y1="7.607" x2="5.666" y2="6.018" width="0.8128" layer="1"/>
 <wire x1="5.666" y1="6.018" x2="7.366" y2="4.318" width="0.8128" layer="1"/>
 <wire x1="7.366" y1="4.318" x2="7.366" y2="2.807" width="0.8128" layer="1"/>
-<wire x1="4.064" y1="5.676" x2="4.064" y2="7.62" width="0.8128" layer="1"/>
-<wire x1="12.065" y1="7.62" x2="1.905" y2="7.62" width="0.8128" layer="16"/>
+<wire x1="4.064" y1="5.676" x2="4.064" y2="7.3025" width="0.8128" layer="1"/>
+<wire x1="12.065" y1="7.3025" x2="1.905" y2="7.3025" width="0.8128" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="C1" pad="2"/>
@@ -4075,20 +4075,20 @@ design rules under a new name.</description>
 <signal name="DI">
 <contactref element="RGB" pad="2"/>
 <contactref element="IN" pad="2"/>
-<wire x1="1.905" y1="5.08" x2="1.524" y2="5.08" width="0.254" layer="1"/>
-<wire x1="1.524" y1="5.08" x2="0.635" y2="5.842" width="0.254" layer="1"/>
-<wire x1="0.635" y1="5.842" x2="0.635" y2="8.255" width="0.254" layer="1"/>
-<wire x1="0.635" y1="8.255" x2="1.397" y2="9.017" width="0.254" layer="1"/>
-<wire x1="1.397" y1="9.017" x2="6.985" y2="9.017" width="0.254" layer="1"/>
-<wire x1="6.985" y1="9.017" x2="7.62" y2="8.382" width="0.254" layer="1"/>
-<wire x1="7.62" y1="8.382" x2="7.366" y2="7.607" width="0.254" layer="1"/>
+<wire x1="1.905" y1="4.7625" x2="1.524" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="1.524" y1="5.08" x2="0.508" y2="5.969" width="0.3048" layer="1"/>
+<wire x1="0.508" y1="5.969" x2="0.508" y2="8.128" width="0.3048" layer="1"/>
+<wire x1="0.508" y1="8.128" x2="1.397" y2="9.017" width="0.3048" layer="1"/>
+<wire x1="1.397" y1="9.017" x2="6.985" y2="9.017" width="0.3048" layer="1"/>
+<wire x1="6.985" y1="9.017" x2="7.366" y2="8.636" width="0.3048" layer="1"/>
+<wire x1="7.366" y1="8.636" x2="7.366" y2="7.607" width="0.3048" layer="1"/>
 </signal>
 <signal name="DO">
 <contactref element="RGB" pad="1"/>
-<wire x1="9.066" y1="7.607" x2="10.173" y2="7.607" width="0.254" layer="1"/>
-<wire x1="10.173" y1="7.607" x2="12.065" y2="5.715" width="0.254" layer="1"/>
+<wire x1="9.066" y1="7.607" x2="9.919" y2="7.607" width="0.254" layer="1"/>
+<wire x1="9.919" y1="7.607" x2="12.065" y2="5.334" width="0.254" layer="1"/>
 <contactref element="OUT" pad="2"/>
-<wire x1="12.065" y1="5.715" x2="12.065" y2="5.08" width="0.254" layer="1"/>
+<wire x1="12.065" y1="5.334" x2="12.065" y2="4.7625" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
