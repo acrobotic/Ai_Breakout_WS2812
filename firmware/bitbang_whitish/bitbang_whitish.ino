@@ -41,14 +41,14 @@
   that you in fact find it useful, but  without warranty of any kind.
 ------------------------------------------------------------------------*/
 
-#define NUM_RGB       (64)         // Number of WS281X we have connected
-#define NUM_BYTES     (NUM_RGB*3)  // Number of LEDs (3 per each WS281X)
-#define DIGITAL_PIN   (8)          // Digital port number
-#define PORT          (PORTB)      // Digital pin's port
-#define PORT_PIN      (PORTB0)     // Digital pin's bit position
-#define R             (10)         // Intensity of Red LED
-#define G             (10)         // Intensity of Green LED
-#define B             (10)         // Intensity of Blue LED
+#define NUM_RGB       (1)         // Number of WS281X we have connected
+#define NUM_BYTES     (NUM_RGB*3) // Number of LEDs (3 per each WS281X)
+#define DIGITAL_PIN   (8)         // Digital port number
+#define PORT          (PORTB)     // Digital pin's port
+#define PORT_PIN      (PORTB0)    // Digital pin's bit position
+#define R             (255)        // Intensity of Red LED
+#define G             (255)        // Intensity of Green LED
+#define B             (255)        // Intensity of Blue LED
 
 #define NUM_BITS      (8)         // Constant value: bits per byte
 
@@ -163,7 +163,7 @@ void render(void)
     "r" (nbits),              // %5
     "r" (tmp),                // %6
     "r" (low),                // %7
-    "e" (p),                  // %a8
+    "e" (p),                  // %8
     "w" (nbytes)              // %9
   );
   sei();                          // Enable interrupts
