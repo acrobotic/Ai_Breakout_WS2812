@@ -1,6 +1,6 @@
 #include "Ai_WS2811.h"
 
-#define NUM_PIXELS 3
+#define NUM_PIXELS 1
 #define DATA_PIN 8
 
 Ai_WS2811 ws2811;
