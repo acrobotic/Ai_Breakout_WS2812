@@ -1,6 +1,6 @@
 Overview
 ---
-This repository includes the Eagle design files (schematics and layout) for our [WS2812 Brekout Board][1]. The WS2812 is a 
+This repository includes the Eagle design files (schematics and layout) for our [WS2812 Breakout Board][1]. The WS2812 is a 
 Smart RGB LED with an embedded LED driver (WS2811) that needs only one data input line for controlling brightness and color. 
 It represents the most compact solution for adding an RGB LED to a Microcontroller-powered project.
 
